@@ -1,8 +1,5 @@
 #container {
   display: grid;
-  /*The code below is affecting the size of the 
-  overall grid. This needs to change with the rows
-  and cols*/
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
   width: 400px;
@@ -13,4 +10,8 @@
 #container div {
   border: 1px solid #ddd;
   box-sizing: border-box;
+}
+
+#container div:hover {
+  background-color: lightblue;
 }
