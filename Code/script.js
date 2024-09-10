@@ -1,4 +1,5 @@
 const container = document.querySelector("#container");
+const clearButton = document.querySelector("#clearButton");
 
 let gridSizePrompt = prompt("How big do you want this thing? 100 is the limit");
 
@@ -24,3 +25,16 @@ function makeRows(rows, cols) {
 }
 
 makeRows(rows, cols);
+
+clearButton.addEventListener("click", function () {
+  if (
+    confirm(
+      "You are about to destroy this masterpiece, you sure you wanna do that?"
+    ) === true
+  ) {
+    const allCells = document.querySelectorAll(".grid-item");
+    allCells.forEach((cell) => {
+      cell.style.backgroundColor = "white";
+    });
+  }
+});
