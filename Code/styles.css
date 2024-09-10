@@ -10,5 +10,8 @@
 
 .grid-item {
   border: 1px solid #ddd;
-  background-color: lightgray;
+}
+
+.grid-item:hover {
+    background-color: red;
 }
