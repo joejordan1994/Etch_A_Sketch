@@ -3,8 +3,13 @@ const clearButton = document.querySelector("#clearButton");
 
 let gridSizePrompt = prompt("How big do you want this thing? 100 is the limit");
 
-while (gridSizePrompt > 100 || gridSizePrompt <= 0 || isNaN(gridSizePrompt)) {
-  alert("ERROR: Please enter a number between 1 and 100.");
+while (
+  gridSizePrompt > 100 ||
+  gridSizePrompt <= 0 ||
+  isNaN(gridSizePrompt) ||
+  !Number.isInteger(Number(gridSizePrompt))
+) {
+  alert("ERROR: Please enter a whole number between 1 and 100.");
   gridSizePrompt = prompt("How big do you want this thing? 100 is the limit");
 }
 
