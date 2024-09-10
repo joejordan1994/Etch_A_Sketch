@@ -1,0 +1,14 @@
+#container {
+  display: grid;
+  justify-content: center;
+  width: 960px;
+  height: 960px;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  gap: 1px;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  background-color: lightgray;
+}
