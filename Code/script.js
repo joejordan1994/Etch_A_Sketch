@@ -22,7 +22,7 @@ function makeRows(rows, cols) {
     let cell = document.createElement("div");
     cell.className = "grid-item";
     cell.addEventListener("mouseover", function () {
-      cell.style.backgroundColor = "red";
+      cell.style.backgroundColor = "black";
     });
 
     container.appendChild(cell);
